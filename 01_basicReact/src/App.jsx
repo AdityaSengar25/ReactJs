@@ -1,9 +1,13 @@
-import React from 'react'
+import Rjs from "./Rjs"
 
-const App = () => {
+function App() {
+  const username = "Rjs"
+
   return (
-    <div>Ayooooo</div>
-    
+    <>
+    <Rjs />
+    <h1>react {username}</h1> {/* here the username in braces is evaluated expression, where it is taken as a variable, evaluated becoz the conditions are already applied it its function and not here. */}
+   </>
   )
 }
 
